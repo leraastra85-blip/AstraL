@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">
+</head>
+<body>
+
+<div id="fullpage">
+
+    <!-- Слайд 1 — Обложка -->
+    <div class="section cover">
+        <h1>Николай & Валерия</h1>
+        <p class="subtitle">Wedding Day</p>
+        <p class="date">25 / 04 / 2026</p>
+        <div class="photo-placeholder">[Тут будет ваша фото]</div>
+    </div>
+
+    <!-- Слайд 2 — Приглашение -->
+    <div class="section invitation">
+        <h2>ДОРОГИЕ ГОСТИ!</h2>
+        <p>С особым трепетом приглашаем вас на наш первый семейный праздник — НАШУ СВАДЬБУ!</p>
+        <p>Нам невероятно приятно разделить с вами этот важный день в нашей жизни!</p>
+        <p class="save-date">SAVE THE DATE</p>
+    </div>
+
+    <!-- Слайд 3 — Локация и программа -->
+    <div class="section location">
+        <h2>ЛОКАЦИЯ</h2>
+        <p>Мы будем ждать вас по адресу:</p>
+        <p><strong>“Шахматный дворец”</strong><br>г. Саратов, Соборная площадь, 2</p>
+
+        <h3>ПРОГРАММА ДНЯ</h3>
+        <ul>
+            <li><strong>15:00 – 15:30</strong> — Сбор гостей / фуршет</li>
+            <li><strong>15:30 – 16:00</strong> — Выездная церемония</li>
+            <li><strong>16:00 – 21:00</strong> — Банкет</li>
+            <li><strong>21:00 – 22:30</strong> — Дискотека</li>
+        </ul>
+    </div>
+
+    <!-- Слайд 4 — RSVP и таймер -->
+    <div class="section rsvp">
+        <h2>Будем рады, если вы подтвердите свое присутствие</h2>
+        <form action="https://formspree.io/f/movlyzkp" method="POST">
+            <input type="text" name="Имя" placeholder="Ваше имя" required>
+            <input type="number" name="Гости" placeholder="Количество гостей" required>
+            <textarea name="Комментарий" placeholder="Комментарий"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <h3>ДО ВСТРЕЧИ!</h3>
+
+        <div class="timer-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="time-left"></p>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
